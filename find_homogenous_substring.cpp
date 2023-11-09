@@ -1,6 +1,17 @@
 #include<iostream>
 using namespace std;
 
+/*
+concept -> given question is = "abbcccaa";
+            We start with the index 1 and count = 1;
+            now we are going checking the string the backward  -> (the if statement below.)
+
+            if we find the previous element is equal to the current element then we increment the count but the count is incremented in different way ->
+            
+            we add the total equal types of the elements in the count till the current element.
+            count = count + (current index - current of the equal element index + 1);
+*/
+
 int countHomogenous(string s) {
     int mod = 1e9+7;
     int count = 1;
